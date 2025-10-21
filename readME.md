@@ -1,20 +1,20 @@
 # Elevator Simulation (Back-End Code Challenge)
 
-This project simulates an elevator control system managing multiple elevator cars across a configurable range of floors. It was written in Java as part of a back-end engineering challenge.
+This is a back-end engineering challenge that was done in Java simulating an elevator control system that manages multiple elevator cars for a configurable number of floors.
 
 ## Overview
 
 The simulation models:
 - Passenger requests (origin → destination)
 - Elevator behavior (movement, door cycles, direction)
-- A controller that dispatches requests to the most appropriate elevator using a simple cost heuristic
+- A controller that allocates requests to the best-fit elevator according to a simple cost heuristic
 
-The simulation runs in discrete time steps (“ticks”), printing the state of each elevator every few ticks.
+The simulation moves forward in discrete time intervals ("ticks") and outputs the state of all elevators periodically, every few ticks.
 
 ## Features
 
-- Multiple elevators managed by a centralized controller  
-- Request queue system separating unassigned and floor-level waiting passengers  
-- Intelligent dispatching that prefers idle or direction-aligned elevators  
-- Door timing simulation and per-floor boarding logic  
-- Configurable building size, number of elevators, and simulation duration  
+- A group of elevators managed by a central controller
+- Request queue model with unassigned and floor-level waiting riders differentiated
+- Intelligent dispatching favoring idle or direction-matched elevators
+- Door timing simulation and per-floor boarding logic
+- Building size, number of elevators, and simulation length configurable
